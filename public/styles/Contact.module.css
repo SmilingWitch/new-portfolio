@@ -1,25 +1,62 @@
 .contact{
     position: relative;
-    height: 100vh;
-    /*background: #fd8f46;*/
+    min-height: 50vh;
     background: pink;
-    text-shadow: 5px 10px 2px rgba(124, 203, 124,0.8);
+    /*text-shadow: 5px 10px 2px rgba(124, 203, 124,0.8);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .bx{
     position: relative;
     width: 1000px;
     margin: 0 auto;
     height: 100%;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;*/
     padding: 20px;
 }
 .bx h1{
     position: relative;
     font-size: 100px;
-
     color: rgb(249, 248, 236);
-    
+}
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    margin-top: 50px;
+}
+.inputBx{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 49%;
+}
+.form input{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background: rgb(249, 248, 236);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(74, 120, 74, 0.8) ;
+    border: 2px solid rgba(74, 120, 74, 0.8);
+    padding: 10px;
+    outline: pink;
+}
+.message{
+    position: relative;
+    height: 100%;
+    width: 49%;
+}
+.message input{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
