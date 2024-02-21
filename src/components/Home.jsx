@@ -22,7 +22,7 @@ export default function Home(){
                 <div className={style.circle}>
                 <div className={style.logo}>2024</div>
                     <div className="text">
-                      <p >Retro - Portfolio</p>
+                      <p>Retro - Portfolio - Retro -</p>
                     </div>
                 </div>
             </div>
