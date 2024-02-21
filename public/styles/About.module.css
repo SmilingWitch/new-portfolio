@@ -27,15 +27,15 @@
 .headerAbout h1{
     position: relative;
     font-size: 100px;
-    color: rgba(74, 120, 74, 0.8);   
+    color: var(--green);   
 }
 .text{
     width: 100%;
 
-    /*border-left: 5px solid rgba(74, 120, 74, 0.8) ;*/
+    /*border-left: 5px solid var(--green) ;*/
 }
 .text p{
-    color: rgba(74, 120, 74, 0.8) ;
+    color: var(--green) ;
     font-family: 'Courier New', Courier, monospace;
 }
 .textResalt{
@@ -91,14 +91,14 @@
     text-transform: uppercase;
     bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgba(74, 120, 74, 0.8) ;
+    color: var(--green) ;
 }
 
 
 .skills{
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    color: rgba(74, 120, 74, 0.8) ;
+    color: var(--green) ;
     height: 100px;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@
     padding-bottom: 10px;
     text-align: center;
     border-radius: 5px;
-    /*border: 3px solid rgba(74, 120, 74, 0.8);*/
+    /*border: 3px solid var(--green);*/
     box-shadow:  3px 3px 0px pink;
 }
 @media(max-width: 1000px ){

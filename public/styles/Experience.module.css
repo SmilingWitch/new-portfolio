@@ -5,7 +5,7 @@
     background: rgba(255, 192, 203,0.8);
     /*padding-top: 10px ;
     padding-bottom: 10px;*/
-    background:  rgba(124, 203, 124,0.8);
+    background:  var(--background);
     box-shadow:  3px 3px 6px rgb(179, 156, 111);
     
 }
@@ -13,7 +13,7 @@
     position: relative;
     font-size: 100px;
     color: #fd8f46;
-    color: rgba(74, 120, 74, 0.8); 
+    color: var(--green); 
     /*color: rgb(249, 248, 236);  */
 }
 .bx{
@@ -36,7 +36,7 @@
 .text{
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    color: rgba(74, 120, 74, 0.8) ;
+    color: var(--green) ;
     height: 100px;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     background: rgb(249, 248, 236);
     padding: 15px;
     height: 500px;
-    box-shadow:  3px 3px 6px rgba(74, 120, 74, 0.8);
+    box-shadow:  3px 3px 6px var(--green);
     cursor: pointer;   
 }
 
@@ -90,7 +90,7 @@
     text-transform: uppercase;
     bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgba(74, 120, 74, 0.8) ;
+    color: var(--green) ;
 }
 .projects{
     position: relative;
@@ -118,7 +118,7 @@
     padding-bottom: 10px;
     text-align: center;
     border-radius: 5px;
-    /*border: 3px solid rgba(74, 120, 74, 0.8);*/
+    /*border: 3px solid var(--green);*/
     box-shadow:  3px 3px 0px pink;
     margin-left: 10px;
 }
