@@ -146,7 +146,7 @@ a {
   left: 50%;
   font-size: 1.2em;
   transform-origin: 0 75px;
-  
+  color: rgb(249, 248, 236);
   text-transform: uppercase;
 }
 @keyframes rotateText {

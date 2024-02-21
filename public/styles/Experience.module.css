@@ -3,8 +3,10 @@
     width: 100%;
     min-height: 100vh ;
     background: rgba(255, 192, 203,0.8);
-    padding-top: 50px ;
+    /*padding-top: 10px ;
+    padding-bottom: 10px;*/
     background:  rgba(124, 203, 124,0.8);
+    box-shadow:  3px 3px 6px rgb(179, 156, 111);
     
 }
 .experience h1{
@@ -13,7 +15,6 @@
     color: #fd8f46;
     color: rgba(74, 120, 74, 0.8); 
     /*color: rgb(249, 248, 236);  */
-    padding-right: 20px;
 }
 .bx{
     position: relative;
@@ -25,6 +26,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    
 }
 .headerAbout{
     position: relative;
@@ -45,20 +47,15 @@
 .text h2{
     font-size: 50px;
 }
-.text p{
-    color: rgba(74, 120, 74, 0.8) ;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 .imageCont{
     position: relative;
-    margin-top: 50px;
     background: rgb(249, 248, 236);
     padding: 15px;
     height: 500px;
     box-shadow:  3px 3px 6px rgba(74, 120, 74, 0.8);
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .imageBx{
@@ -68,11 +65,6 @@
     overflow: hidden;  
 
 }
-/*.imageCont:nth-child(1){
-    background-image: url("/images/wallet.png");
-    background-size: cover;
-    background-position: center;
-}*/
 
 .iconBx{
     position: relative;
@@ -103,11 +95,9 @@
 .projects{
     position: relative;
     width: 100%;
-    /*display: flex;
-    align-items: center;
-    justify-content: space-between;*/
     display: grid;
     grid-gap: 20px;
+    padding-top: 30px;
     grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
 }
 .labelBx{
@@ -141,4 +131,40 @@
     filter: grayscale(0);
 
     transition: 0.3s;
+}
+
+
+@media(max-width: 1000px ){
+    .bx{
+        width: 100%;
+    }
+    .headerAbout{
+        width: 100%;
+    }
+
+}
+@media(max-width:684px){
+
+    .headerAbout h1{
+     font-size: 80px;
+    }
+
+}
+@media(max-width:460px){
+    .headerAbout h1{
+        font-size: 60px;
+       }
+
+}
+@media(max-width:442px){
+    .projects{
+        grid-gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    }
+
+    .imageCont{
+        padding: 15px;
+        padding-bottom: 30px;
+        height: 350px;  
+    }
 }
