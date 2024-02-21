@@ -24,7 +24,6 @@ export default function Experience(){
                             <div className={style.label}> Git</div> 
                             <div className={style.label}> Github</div>
                         </div>
-                        {/*<p>   HTML, CSS, Typescript, Javascript, React, Next, Vite, Git, Github</p>*/}
                     </div>
                 </div>
                 <div className={style.projects}>
@@ -48,8 +47,8 @@ export default function Experience(){
                                 objectFit="cover"
                                 className={style.image}></Image>
                         </div>
-                        <div className={style.iconBx}><BsHouse  className={style.icon}/></div>
-                        <div className={style.imageText}>{/*Real Estate*/} Investment Platform</div>
+                        <div className={style.iconBx}><PiCoin  className={style.icon}/></div>
+                        <div className={style.imageText}>Yield Farming Platform</div>
                     </div>
 
                     {/*<div className={style.imageCont}>
