@@ -39,7 +39,26 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+@font-face {
+  font-family: 'Standie-Bold';
+  src: url('/fonts/Standie-Bold.ttf') 
+}
+/*@font-face {
+  font-family: 'AutorsStory';
 
+  src: url('/fonts/Gods Eunorak.ttf')
+}*/
+
+@font-face {
+  font-family: 'AutorsStory';
+  src: url('/fonts/AutorsStory.ttf') ;
+
+}
+@font-face {
+  font-family: 'Retro Morely Regular';
+  src: url('/fonts/Gods Eunorak.ttf') ;
+
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -73,6 +92,15 @@
   }
 }
 
+:root{
+  --red: #C33740;
+  --brown: #D7A278;
+  --light: rgb(227, 213, 184);
+  --blue: #679499;
+  --dark: #69433A;
+
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -84,15 +112,22 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+h1,h2,h3,h4{
+  font-family: 'Retro Morely Regular';
+  
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /*background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb));*/
+    /*background: rgb(39, 39, 39);
+    background: var(--light);*/
+    background: var(--light);
 }
 
 a {
@@ -100,6 +135,28 @@ a {
   text-decoration: none;
 }
 
+.text{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite ;
+}
+.text span{
+  position: absolute; 
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 75px;
+  
+  text-transform: uppercase;
+}
+@keyframes rotateText {
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
