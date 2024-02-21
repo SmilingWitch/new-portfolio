@@ -1,0 +1,111 @@
+.bx{
+    position: relative;
+    width: 100%;
+    /*min-height: 70vh;*/
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(124, 203, 124,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageBx1{
+    position: absolute;
+    height: 350px;
+    width: 500px;
+}
+.header h1{
+ color: #fd8f46;
+ color: rgb(56, 36, 3);
+ font-size: 150px;
+ position: relative;
+ letter-spacing: -2px;
+ color: rgb(249, 248, 236);
+ text-shadow: 5px 10px 2px pink;
+}
+.btnBx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.btn{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(249, 248, 236);
+    box-shadow: 5px 5px 2px pink;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+}
+.icon{
+    color:pink;
+    font-size: 1.5em;
+}
+.info{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+.info h3{
+    font-size: 50px;
+    color: rgba(74, 120, 74, 0.8);
+
+}
+.textHeader h1:nth-child(1){
+    font-size: 100px;
+    text-shadow: none;
+    right: 80px;
+    color: rgba(74, 120, 74, 0.8);
+}
+.body{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70vh;
+    right: 0px;
+    left: 30vw;
+}
+.circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+   
+    /*color:rgba(74, 120, 74, 0.8) ;*/
+
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Retro Morely Regular';
+    font-size: 2em;
+    background: rgba(124, 203, 124,0.8);
+    background: pink;
+    border: 2p;
+}
