@@ -30,7 +30,7 @@ export default function Home(){
 
                 <div className={style.info}>
                     <div className={style.textHeader}>
-                      <h1>Hi, I'm</h1>  <h1>Daniela Yero</h1>
+                      <h1>Hi, I&apos;m</h1>  <h1>Daniela Yero</h1>
                     </div>
                     
                     <h3>{"< Frontend Developer />"}</h3>
