@@ -26,7 +26,7 @@
 }
 .headerAbout h1{
     position: relative;
-    font-size: 100px;
+    font-size: var(--font-size-full);
     color: var(--green);   
 }
 .text{
@@ -107,7 +107,8 @@
     margin-bottom: 50px;
 }
 .skills h2{
-    font-size: 50px;
+    font-size: 30px;
+    margin-right:20px ;
 }
 .labelBx{
     position: relative;
@@ -147,7 +148,7 @@
 @media(max-width:684px){
 
     .headerAbout h1{
-     font-size: 80px;
+     font-size: var(--font-size-middle);
     }
 
 }
@@ -169,7 +170,7 @@
 }
 @media(max-width:550px){
     /*.headerAbout h1{
-     font-size: 60px;
+     font-size: var(--font-size-short);
     }*/
     .labelBx{
         grid-gap: 16px;
@@ -185,7 +186,7 @@
 }
 @media(max-width:460px){
     .headerAbout h1{
-        font-size: 60px;
+        font-size: var(--font-size-short);
        }
 
 }

@@ -19,7 +19,7 @@
 }
 .bx h1{
     position: relative;
-    font-size: 100px;
+    font-size: var(--font-size-full);
     color: rgb(249, 248, 236);
 }
 .form{
@@ -96,7 +96,7 @@
 @media(max-width:684px){
 
     .bx h1{
-     font-size: 80px;
+     font-size: var(--font-size-middle);
     }
 
 }
@@ -106,7 +106,7 @@
         height: 52vh;
     }
     .bx h1{
-        font-size: 60px;
+        font-size: var(--font-size-short);
        }
        .inputs{
         flex-direction: column;

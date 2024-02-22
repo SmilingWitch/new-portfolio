@@ -3,15 +3,13 @@
     width: 100%;
     min-height: 100vh ;
     background: rgba(255, 192, 203,0.8);
-    /*padding-top: 10px ;
-    padding-bottom: 10px;*/
     background:  var(--background);
     box-shadow:  3px 3px 6px rgb(179, 156, 111);
     
 }
 .experience h1{
     position: relative;
-    font-size: 100px;
+    font-size: var(--font-size-full);
     color: #fd8f46;
     color: var(--green); 
     /*color: rgb(249, 248, 236);  */
@@ -146,13 +144,13 @@
 @media(max-width:684px){
 
     .headerAbout h1{
-     font-size: 80px;
+     font-size: var(--font-size-middle);
     }
 
 }
 @media(max-width:460px){
     .headerAbout h1{
-        font-size: 60px;
+        font-size: var(--font-size-short);
        }
 
 }

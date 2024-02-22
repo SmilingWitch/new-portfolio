@@ -18,7 +18,6 @@ export default function Contact(){
 
                             </textarea>
                         </div>
-
                     </div>
                     
 

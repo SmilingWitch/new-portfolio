@@ -22,7 +22,7 @@
     width: 500px;
 }
 .header h1{
- font-size: 150px;
+ font-size: 100px;
  position: relative;
  /*letter-spacing: -2px;*/
  color: rgb(249, 248, 236);
@@ -68,13 +68,13 @@
     align-items: center;
 }
 .info h3{
-    font-size: 50px;
+    font-size: 40px;
     color: var(--green);
 }
 
 .textHeader h1:nth-child(1){
     position: relative;
-    font-size: 100px;
+    font-size: var(--font-size-full);
     text-shadow: none;
     /*right: 80px;*/
     color: var(--green);
@@ -98,8 +98,6 @@
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-   
-    /*color:rgba(74, 120, 74, 0.8) ;*/
 
 }
 .logo{
@@ -126,20 +124,31 @@
         width: 90%;
     }
 }
-@media(max-width:684px){
+@media(max-width: 790px ){
     .header h1{
-        font-size: 120px;
+        font-size: 100px;
        }
     .textHeader h1:nth-child(1){
-     font-size: 80px;
+     font-size: 70px;
     }
     .info h3{
-        font-size: 35px;
+        font-size: 30px;
+    }
+}
+@media(max-width:684px){
+    .header h1{
+        font-size: 90px;
+       }
+    .textHeader h1:nth-child(1){
+     font-size: 60px;
+    }
+    .info h3{
+        font-size: 25px;
     }
 }
 @media(max-width:550px){
     .header h1{
-        font-size: 100px;
+        font-size: var(--font-size-full);
        }
 }
 @media(max-width:460px){
@@ -147,6 +156,6 @@
         text-align: center;
        }
        .info h3{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
