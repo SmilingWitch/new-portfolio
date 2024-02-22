@@ -43,11 +43,7 @@
   font-family: 'Standie-Bold';
   src: url('/fonts/Standie-Bold.ttf') 
 }
-/*@font-face {
-  font-family: 'AutorsStory';
 
-  src: url('/fonts/Gods Eunorak.ttf')
-}*/
 
 @font-face {
   font-family: 'AutorsStory';
@@ -56,8 +52,20 @@
 }
 @font-face {
   font-family: 'Retro Morely Regular';
-  src: url('/fonts/Gods Eunorak.ttf') ;
-
+  /*src: url('/fonts/Gods Eunorak.ttf') ;*/
+  src: url('/fonts/Terror of Vampire Castle Regular.ttf') ;
+ 
+}
+/* Webfont: TerrorofVampireCastle-Regular */@font-face {
+  font-family: 'TerrorofVampireCastle';
+  src: url('/fonts/Web-TT/TerrorofVampireCastleRegular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Web-TT/TerrorofVampireCastleRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Web-TT/TerrorofVampireCastleRegular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Web-TT/TerrorofVampireCastleRegular.woff2') format('woff2'), /* Modern Browsers */
+       url('/fonts/Web-TT/TerrorofVampireCastleRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+           font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -99,7 +107,11 @@
   --blue: #679499;
   --dark: #69433A;
   --green: rgba(74, 120, 74);
-  --background: rgba(124, 203, 124,0.8)
+  --background: rgba(124, 203, 124,0.8);
+
+  --font-size-full:  80px;
+  --font-size-middle: 60px;
+  --font-size-short: 40px
 
 }
 
@@ -115,7 +127,7 @@ body {
   overflow-x: hidden;
 }
 h1,h2,h3,h4{
-  font-family: 'Retro Morely Regular';
+  font-family: /*'Retro Morely Regular'*/'TerrorofVampireCastle';
   
 }
 
