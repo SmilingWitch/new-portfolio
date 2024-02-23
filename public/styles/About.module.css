@@ -2,14 +2,11 @@
     position: relative;
     width: 1000px;
     margin: 0 auto;
-   /* min-height: 50vh;*/
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /*padding: 20px;*/
-
 }
 .aboutBx{
     position: relative;
@@ -27,7 +24,8 @@
 .headerAbout h1{
     position: relative;
     font-size: var(--font-size-full);
-    color: var(--green);   
+    color: var(--green); 
+    letter-spacing: 2px;  
 }
 .text{
     width: 100%;
@@ -94,21 +92,20 @@
     color: var(--green) ;
 }
 
-
 .skills{
-    width: 100%;
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
-    color: var(--green) ;
-    height: 100px;
+    color: var(--green);
+    width: 100%;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 .skills h2{
     font-size: 30px;
     margin-right:20px ;
+    letter-spacing: 1px; 
 }
 .labelBx{
     position: relative;
@@ -157,7 +154,6 @@
     .skills{
         position: relative;
         flex-direction: column;
-        min-height: 200px;
         align-items: flex-start;
         margin-top: 0;
     }
@@ -181,7 +177,6 @@
 }
 @media(max-width:538px){
     .skills{
-        height: 300px;
         grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     }
 }
@@ -191,9 +186,5 @@
        }
 
 }
-@media(max-width:375px){
-    .skills{
-        height: 520px;
-    }
-}
+
 

@@ -13,6 +13,7 @@
     color: #fd8f46;
     color: var(--green); 
     /*color: rgb(249, 248, 236);  */
+    letter-spacing: 2px; 
 }
 .bx{
     position: relative;
