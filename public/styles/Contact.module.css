@@ -1,6 +1,7 @@
 .contact{
     position: relative;
     background: pink;
+    min-height: 200px;
     /*text-shadow: 5px 10px 2px var(--green);*/
     display: flex;
     flex-direction: column;
