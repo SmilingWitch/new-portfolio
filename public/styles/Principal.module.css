@@ -2,13 +2,13 @@
 .cont{
     position: relative;
     min-height: 100vh;  
-    padding: 30px;
+    /*padding: 30px;*/
 }
-@media(max-width:508px){
+/*@media(max-width:508px){
     .cont{
         padding: 20px;
     }
-}
+}*/
 
 
 
