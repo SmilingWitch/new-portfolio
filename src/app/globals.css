@@ -166,7 +166,9 @@ a {
 
 /*.slick-next:before,
 .slick-prev:before {
-    color: var(--hlColor) !important;
+
+    width: 200px !important;
+    height: 200px !important;
     border-radius: 50%;
 }
 
@@ -174,6 +176,16 @@ a {
 .slick-prev:hover:before {
     color: var(--hlColorHover); 
 }*/
+
+.slick-arrow {
+  color: #000; /* Cambia el color de las flechas */
+  font-size: 30px; /* Ajusta el tamaño de las flechas */
+ }
+ 
+ .slick-arrow:hover {
+  color: #f00; /* Cambia el color de las flechas al pasar el mouse */
+ }
+ 
 
 
 
