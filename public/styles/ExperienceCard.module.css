@@ -1,20 +1,23 @@
 .imageCont{
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background: rgb(249, 248, 236);
     padding: 15px;
-    height: 400px;
-    width: 300px;
-    box-shadow:  3px 3px 6px var(--green);
-    cursor: pointer;   
-    /*transform: rotate(-20deg);*/
+    height: 250px;
+    width: 200px;
+    transform: rotate(-20deg);
+    box-shadow:  3px 3px 6px rgb(179, 156, 111);
 }
 
 .imageBx{
     position: relative;
-    height: 90%;
+    height: 150px;
     width: 100%;
     overflow: hidden;  
-
+    background-image: url("/images/PERFIL.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .iconBx{
@@ -44,7 +47,40 @@
     color: var(--green) ;
 }
 
-
+.cardBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+.info{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    padding-top: 30px;
+}
+.info h2{
+    font-size: 30px;
+    margin-right:20px ;
+    letter-spacing: 1px; 
+    color: var(--green);
+    margin-bottom: 10px;
+}
+.info p{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--green);
+}
+.skills{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
 .image{
     filter: grayscale(1);
     border: 1px solid rgba(176, 175, 175,0.3) ;

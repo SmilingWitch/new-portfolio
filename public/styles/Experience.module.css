@@ -1,7 +1,7 @@
 .experience{
     position: relative;
     width: 100%;
-    min-height: 100vh ;
+    height: 100vh ;
     background: rgba(255, 192, 203,0.8);
     background:  var(--background);
 
@@ -52,56 +52,13 @@
 }
 
 
-/*.imageCont{
-    position: relative;
-    background: rgb(249, 248, 236);
-    padding: 15px;
-    height: 500px;
-    box-shadow:  3px 3px 6px var(--green);
-    cursor: pointer;   
-}
-
-.imageBx{
-    position: relative;
-    height: 90%;
-    width: 100%;
-    overflow: hidden;  
-
-}
-
-.iconBx{
-    position: relative;
-    color: rgb(249, 248, 236);
-    font-size: 2em;
-    width: 50px;
-    height: 50px;
-    background: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 20px;
-    border: 3px solid rgb(249, 248, 236);
-    background: pink;
-    margin: 0 auto;
-}
-
-.imageText{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--green) ;
-}*/
 .projects{
     position: relative;
     width: 100%;
-    padding-top: 30px;
-   /* display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));*/
+    /*padding-top: 30px;*/
+    height: 100%;
+    display: flex;
+    align-items: center;
 
 }
 .labelBx{
@@ -143,7 +100,11 @@
     display: flex;
     align-items: center ;
     justify-content: center;
-    background: red;
+    background: violet;
+}   
+.cardBx h1{
+background: red;
+width: 200px;
 }
 
 

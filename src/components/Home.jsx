@@ -38,19 +38,18 @@ export default function Home(){
                 
             </div>
            <div className={style.btnBx}>
-            <div className={style.btn}>
-                <FiGithub className ={style.icon}/>
-            </div>
-            <div className={style.btn}>
-                <SlSocialLinkedin className ={style.icon}/>
-            </div>
-            <div className={style.btn}>
-                <FiInstagram className ={style.icon}/>
-            </div>
-            <div className={style.btn}>
-                <SlSocialFacebook className ={style.icon}/>
-            </div>
-
+                <div className={style.btn}>
+                    <FiGithub className ={style.icon}/>
+                </div>
+                <div className={style.btn}>
+                    <SlSocialLinkedin className ={style.icon}/>
+                </div>
+                <div className={style.btn}>
+                    <FiInstagram className ={style.icon}/>
+                </div>
+                <div className={style.btn}>
+                    <SlSocialFacebook className ={style.icon}/>
+                </div>
            </div>
             
         </div>

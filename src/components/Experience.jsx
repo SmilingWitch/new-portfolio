@@ -8,12 +8,55 @@ import { MdOutlineStorefront } from "react-icons/md";
 import Image from "next/image"
 import ExperienceCard from "./ExperienceCard";
 import Slider from "react-slick";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useState, useEffect } from "react";
 
 export default function Experience(){
 
+
+  const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true); 
+     }, []);
+
+
+
+    
+
+
+
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+       <div
+         className={className}
+         onClick={onClick}
+         style={{ ...style, fontSize: '30px' }} // Ajusta el tamaño de las flechas aquí
+       >
+         <AiOutlineArrowLeft />
+       </div>
+    );
+   };
+
+   const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+       <div
+         className={className}
+         onClick={onClick}
+         style={{ ...style, fontSize: '30px' }} // Ajusta el tamaño de las flechas aquí
+       >
+         <AiOutlineArrowRight />
+       </div>
+    );
+   };
+
     const settings = {
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
         dots: true,
         arrows: true,
         slidesToShow: 1,
@@ -92,7 +135,9 @@ export default function Experience(){
       };
 
 
-
+      if (!isMounted) {
+        return (null)
+    }
 
 
 
@@ -103,58 +148,12 @@ export default function Experience(){
                     <h1>Experience</h1>
                 </div>
                 <div className={style.projects}>
-                    {/*<div className={style.imageCont}>
-                        <div className={style.imageBx}>
-                            <Image src = "/images/wallet.png"
-                                alt="Descripción de la imagen"
-                                layout="fill"
-                                objectFit="cover"
-                                className={style.image}></Image>
-                        </div>
-                        <div className={style.iconBx}><IoWalletOutline  className={style.icon}/></div>
-                        <div className={style.imageText}>Wallet</div>
-                    </div>
+                      <Slider {...settings} arrows = {true}>
+                              <ExperienceCard url = "/images/wallet.png"  name = "Wallet"/>
+                              <ExperienceCard url = "/images/store.png"  name = "E-commerce"/>
 
-                    <div className={style.imageCont}>
-                        <div className={style.imageBx}>
-                            <Image src = "/images/store.png"
-                                alt="Descripción de la imagen"
-                                layout="fill"
-                                objectFit="cover"
-                                className={style.image}></Image>
-                        </div>
-                        <div className={style.iconBx}><MdOutlineStorefront  className={style.icon}/></div>
-                        <div className={style.imageText}>E-commerce</div>
-                    </div>
-
-                    <div className={style.imageCont}>
-                        <div className={style.imageBx}>
-                            <Image src = "/images/dex.png"
-                                alt="Descripción de la imagen"
-                                layout="fill"
-                                objectFit="cover"
-                                className={style.image}></Image>
-                        </div>
-                        <div className={style.iconBx}><PiCoin  className={style.icon}/></div>
-                        <div className={style.imageText}>Yield Farming Platform</div>
-                    </div>*/}
-
-                                <Slider {...settings} arrows = {true}>
-                                    <div className={style.cardBx}>
-                                        <ExperienceCard url = "/images/wallet.png"  name = "Wallet"/>
-                                        <h1>Wallet</h1>
-                                    </div>
-                                    <div className={style.cardBx}>
-                                        <ExperienceCard url = "/images/store.png"  name = "E-commerce"/>
-                                        <h1>E-commerce</h1>
-                                    </div>
-                                    <div className={style.cardBx}>
-                                        <ExperienceCard url = "/images/dex.png"  name = "Yield Farming Platform"/>
-                                        <h1>Yield Farming Platform</h1>
-                                    </div>
-       
-                                    
-                                </Slider>
+                              <ExperienceCard url = "/images/dex.png"  name = "Yield Farming Platform"/>
+                      </Slider>
                     
                 </div>
 
