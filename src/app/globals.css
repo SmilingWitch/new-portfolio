@@ -53,7 +53,7 @@
 @font-face {
   font-family: 'Retro Morely Regular';
   /*src: url('/fonts/Gods Eunorak.ttf') ;*/
-  src: url('/fonts/Terror of Vampire Castle Regular.ttf') ;
+  src: url('/fonts/Terror_of_Vampire_Castle_Regular.ttf') ;
  
 }
 /* Webfont: TerrorofVampireCastle-Regular */@font-face {
@@ -163,6 +163,20 @@ a {
   color: rgb(249, 248, 236);
   text-transform: uppercase;
 }
+
+/*.slick-next:before,
+.slick-prev:before {
+    color: var(--hlColor) !important;
+    border-radius: 50%;
+}
+
+.slick-next:hover:before,
+.slick-prev:hover:before {
+    color: var(--hlColorHover); 
+}*/
+
+
+
 @keyframes rotateText {
   0%{
     transform: rotate(360deg);
