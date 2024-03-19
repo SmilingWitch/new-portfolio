@@ -4,7 +4,10 @@
     min-height: 100vh ;
     background: rgba(255, 192, 203,0.8);
     background:  var(--background);
-    box-shadow:  3px 3px 6px rgb(179, 156, 111);
+
+    /*box-shadow:  3px 3px 6px rgb(179, 156, 111);*/
+    display: flex;
+    flex-direction: column;
     
 }
 .experience h1{
@@ -30,6 +33,7 @@
 .headerAbout{
     position: relative;
     width: 100%;
+    height: 10vh;
     
 }
 .text{
@@ -48,7 +52,7 @@
 }
 
 
-.imageCont{
+/*.imageCont{
     position: relative;
     background: rgb(249, 248, 236);
     padding: 15px;
@@ -90,14 +94,15 @@
     bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: var(--green) ;
-}
+}*/
 .projects{
     position: relative;
     width: 100%;
-    display: grid;
-    grid-gap: 20px;
     padding-top: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+   /* display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));*/
+
 }
 .labelBx{
     position: relative;
@@ -121,7 +126,7 @@
     box-shadow:  3px 3px 0px pink;
     margin-left: 10px;
 }
-.image{
+/*.image{
     filter: grayscale(1);
     border: 1px solid rgba(176, 175, 175,0.3) ;
     transition: 0.3s;
@@ -130,6 +135,15 @@
     filter: grayscale(0);
 
     transition: 0.3s;
+}*/
+
+.cardBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background: red;
 }
 
 
