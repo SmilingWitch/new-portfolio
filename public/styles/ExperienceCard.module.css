@@ -1,0 +1,57 @@
+.imageCont{
+    position: relative;
+    background: rgb(249, 248, 236);
+    padding: 15px;
+    height: 400px;
+    width: 300px;
+    box-shadow:  3px 3px 6px var(--green);
+    cursor: pointer;   
+    /*transform: rotate(-20deg);*/
+}
+
+.imageBx{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;  
+
+}
+
+.iconBx{
+    position: relative;
+    color: rgb(249, 248, 236);
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    border: 3px solid rgb(249, 248, 236);
+    background: pink;
+    margin: 0 auto;
+}
+
+.imageText{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--green) ;
+}
+
+
+.image{
+    filter: grayscale(1);
+    border: 1px solid rgba(176, 175, 175,0.3) ;
+    transition: 0.3s;
+}
+.image:hover{
+    filter: grayscale(0);
+
+    transition: 0.3s;
+}
