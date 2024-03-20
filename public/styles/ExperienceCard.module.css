@@ -1,23 +1,21 @@
 .imageCont{
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
     background: rgb(249, 248, 236);
     padding: 15px;
     height: 250px;
     width: 200px;
     transform: rotate(-20deg);
-    box-shadow:  3px 3px 6px rgb(179, 156, 111);
+    box-shadow:  3px 3px 6px rgb(25, 71, 24);
+    left: 50px;
 }
 
 .imageBx{
     position: relative;
     height: 150px;
     width: 100%;
-    overflow: hidden;  
-    background-image: url("/images/PERFIL.jpg");
-    background-size: cover;
-    background-position: center;
+    overflow: hidden; 
+
+   
 }
 
 .iconBx{
@@ -69,6 +67,8 @@
     margin-bottom: 10px;
 }
 .info p{
+    position: relative;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
     color: var(--green);
 }
@@ -85,6 +85,7 @@
     filter: grayscale(1);
     border: 1px solid rgba(176, 175, 175,0.3) ;
     transition: 0.3s;
+    background: whitesmoke;
 }
 .image:hover{
     filter: grayscale(0);
