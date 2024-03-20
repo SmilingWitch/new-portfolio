@@ -12,11 +12,17 @@ import 'aos/dist/aos.css';
 
 export default function Experience(){
 
+    useEffect(() => {
+        AOS.init({
+            duration: 200, // Duración de la animación
+        });
+    }, []);
+
     return(
         <div className={style.experience}>
             <div className={style.bx}>
                 <div className={style.headerAbout}>
-                    <h1>Experience</h1>
+                    <h1 data-aos="zoom-in">Experience</h1>
                 </div>
                 <div className={style.projects}>
 
@@ -41,8 +47,7 @@ export default function Experience(){
                             <ExperienceCard url="/images/dex.png" name="Yield Farming Platform" urlGh = "/" urlDep = "/" tec1 = "React" tec2 = "Javascript" />
                             
                         </SwiperSlide>
-                    </Swiper>
-            
+    </Swiper>
                 </div>
 
 
