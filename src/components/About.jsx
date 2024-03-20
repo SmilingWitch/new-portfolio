@@ -3,6 +3,7 @@ import Image from "next/image"
 import { IoCameraOutline } from "react-icons/io5";
 
 export default function About(){   
+
     return(
         <div className={style.about}>
             <div className={style.aboutBx}>
@@ -33,6 +34,8 @@ export default function About(){
                         <div className={style.label}> Github</div>
                     </div>
                 </div>
+
+            
                
             
         </div>
