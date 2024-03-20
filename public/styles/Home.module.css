@@ -4,6 +4,7 @@
     height: 100dvh;
     margin: 0 auto;
     background: var(--background);
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +22,23 @@
     height: 350px;
     width: 500px;
 }
-.header h1{
+.header h1, .header1 span{
  font-size: 100px;
  position: relative;
  letter-spacing: 2px;
  color: rgb(249, 248, 236);
  /*text-shadow: 5px 10px 2px pink;*/
  text-shadow: 4px 6px 2px pink;
+ font-family: 'TerrorofVampireCastle';
+}
+.header1{
+    position: relative;
+    display: flex;
+}
+.space{
+    position: relative;
+    margin-left: 20px;
+    
 }
 .btnBx{
     position: relative;
@@ -48,10 +59,19 @@
     justify-content: center;
     cursor: pointer;
     margin: 0 5px 0 5px;
+    transition: 0.5s;
 }
 .icon{
     color:pink;
     font-size: 1.5em;
+    transition: 0.5s;
+}
+.btn:hover{
+    box-shadow: 5px 5px 2px rgb(249, 248, 236);
+    background:  pink;
+}
+.btn:hover .icon{
+    color: rgb(249, 248, 236);
 }
 .info{
     position: relative;
@@ -128,7 +148,7 @@
     }
 }
 @media(max-width: 790px ){
-    .header h1{
+    .header1 span{
         font-size: 100px;
        }
     .textHeader h1:nth-child(1){
@@ -139,7 +159,7 @@
     }
 }
 @media(max-width:684px){
-    .header h1{
+    .header1 span{
         font-size: 90px;
        }
     .textHeader h1:nth-child(1){
@@ -150,19 +170,19 @@
     }
 }
 @media(max-width:550px){
-    .header h1{
+    .header1 span{
         font-size: var(--font-size-full);
        }
 }
 @media(max-width:460px){
-    .header h1{
+    .header1 span{
         font-size: 60px;
         text-shadow: 3px 4px 2px pink;
        }
     .textHeader h1:nth-child(1){
      font-size: 40px;
     }
-    .header h1:nth-child(2){
+    .header1 span:nth-child(2){
         text-align: center;
        }
        .info h3{
